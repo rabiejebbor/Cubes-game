@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.game {
+  display: flex;
+  height: 80%;
+  justify-content: space-around;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+.controlBar {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+.text {
+  flex: 1;
+  margin-left: 0.5rem;
+  padding: 1rem;
+}
+
+.game-container {
+  border: solid 0.15rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  flex: 2;
+  justify-items: center;
+}
+.result-table {
+  padding: 1rem;
+  border: solid 0.15rem;
+  margin-left: 0.5rem;
+  flex: 1;
+}
+.points-field,
+.time-field {
+  padding: 0.3rem;
+  border: solid 0.1rem;
+  border-radius: 1rem;
+  min-width: 4rem;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+.fields {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.buttons {
+  flex: 1.5;
+  display: flex;
+  justify-content: space-around;
+}
+
+.startButton,
+.newGameButton {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.3rem;
+  border: transparent;
+  border-radius: 1rem;
+  background: rgb(168, 168, 168);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 1rem;
+  min-width: 2rem;
+}
+.startButton:hover,
+.newGameButton:hover {
+  background: rgb(240, 0, 0);
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+hr {
+  border: 0;
+  background-color: #000;
+  height: 0.2rem;
+}
+h3 {
+  font-size: 0.7rem;
+  text-align: center;
+}
+.cube {
+  border-radius: 1rem;
+  margin: 0.1rem;
+  height: 4rem;
+  width: 4rem;
+}
+.cubes-container {
+  background-color: burlywood;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.save-box {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.save {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.save:hover,
+.save:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#name {
+  font-size: 2rem;
+}
+label {
+  font-size: 2rem;
+  padding: 1rem 0 0 0;
+}
+.score {
+  font-size: 2rem;
+}
+
+.start {
+  grid-column: 3 / 6;
+  grid-row: 4/5;
+}

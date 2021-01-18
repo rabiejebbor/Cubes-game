@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cube Game</title>
+  </head>
+  <body>
+    <h1>Remove Cubes</h1>
+    <div class="container">
+      <div class="controls">
+        <div class="controlBar">
+          <div class="buttons">
+            <button class="startButton">START</button>
+            <button class="newGameButton">NEW GAME</button>
+          </div>
+          <div class="fields">
+            <div class="points">
+              <h3>Points</h3>
+              <div class="points-field">
+                <p>0</p>
+              </div>
+            </div>
+            <div class="time">
+              <h3>Time left</h3>
+              <div class="time-field">
+                <p>01:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text">
+          <p></p>
+        </div>
+      </div>
+      <div class="game">
+        <div class="game-container">
+          <p class="start">To start playing click START !</p>
+        </div>
+        <div class="result-table">
+          <h2>Result Table</h2>
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <div class="save-box">
+      <div class="box-content">
+        <div class="score">
+          <p>Your score: 000</p>
+        </div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <button class="save">SAVE</button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
