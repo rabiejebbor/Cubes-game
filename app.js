@@ -26,8 +26,8 @@ let displayedObjects = [];
 
 function initialisation() {
   displayedObjects = [];
-  countDown = 60;
-  timeField.innerHTML = `<p>01:00</p>`;
+  countDown = 30;
+  timeField.innerHTML = `<p>00:30</p>`;
   points = 0;
   pointsField.innerHTML = `<p>0</p>`;
   if (interval) {
