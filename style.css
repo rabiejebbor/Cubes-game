@@ -20,7 +20,7 @@ body {
 
 .game {
   display: flex;
-  height: 80%;
+  min-height: 80%;
   justify-content: space-around;
 }
 .controls {

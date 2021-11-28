@@ -81,8 +81,9 @@ function timeLeftSimplified() {
 }
 
 function cubeClicked(cube) {
+  console.log(cube);
   if (countDown > 0) {
-    let clickedCube = document.getElementById(cube.toElement.id);
+    let clickedCube = document.getElementById(cube.target.id);
     let cubeIndex = displayedObjects.findIndex(
       (element) =>
         element.otherColumn === Number(clickedCube.style.gridColumnStart) &&
